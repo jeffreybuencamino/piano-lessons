@@ -10,7 +10,7 @@ function App() {
   if (window.location.pathname === "/thank-you") {
     return <ThankYou />;
   }
-  
+
   return (
     <div>
       <Navbar />
@@ -32,7 +32,7 @@ function App() {
     </p>
 
     <div className="hero-actions">
-      <a href="https://docs.google.com/forms/d/e/1FAIpQLSc6g0j79u7HirAxq5sk7wQDV8VH0gAeHN_0LDDu0hNtm1V06g/viewform?usp=publish-editor" target="_blank" rel="noopener noreferrer" className="hero-button">
+      <a href="#booking" className="hero-button">
         Book a Lesson
       </a>
 

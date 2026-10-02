@@ -19,7 +19,7 @@ const [menuOpen, setMenuOpen] = useState(false);
         <a href="#contact">Contact</a>
       </div>
 
-      <a href="https://docs.google.com/forms/d/e/1FAIpQLSc6g0j79u7HirAxq5sk7wQDV8VH0gAeHN_0LDDu0hNtm1V06g/viewform?usp=publish-editor" target="_blank" rel="noopener noreferrer" className="nav-button">
+      <a href="#booking" className="nav-button">
         Book a Lesson
       </a>
 
