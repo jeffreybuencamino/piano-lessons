@@ -4,8 +4,13 @@ import Lessons from "./components/Lessons";
 import Contact from "./components/Contact";
 import FAQ from "./components/FAQ";
 import Footer from "./components/Footer";
-
+import BookingForm from "./components/BookingForm";
+import ThankYou from "./components/ThankYou";
 function App() {
+  if (window.location.pathname === "/thank-you") {
+    return <ThankYou />;
+  }
+  
   return (
     <div>
       <Navbar />
@@ -54,11 +59,25 @@ function App() {
 <Lessons/>
 <About/>
 <Contact />
+
+<section className="booking-section" id="booking">
+  <div className="booking-container">
+    <p className="section-label">GET STARTED</p>
+
+    <h2>Let's Get You Started.</h2>
+
+    <p className="booking-description">
+      Tell me a little about the student and what you're looking for.
+      I'll reach out so we can talk about lessons and find a good fit.
+    </p>
+
+    <BookingForm />
+  </div>
+</section>
 <FAQ/>
 <Footer/>
       </main>
     </div>
   );
 }
-
 export default App;

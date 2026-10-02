@@ -731,3 +731,264 @@ main {
 }
 
 
+/* BOOKING FORM */
+
+.booking-section {
+  padding: 120px 6%;
+  background: #f7f1e3;
+  color: #171717;
+}
+
+.booking-container {
+  max-width: 750px;
+  margin: 0 auto;
+}
+
+.booking-container h2 {
+  font-size: clamp(2.8rem, 6vw, 5rem);
+  line-height: 1.05;
+  margin-bottom: 25px;
+}
+
+.booking-description {
+  color: #555555;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 50px;
+}
+
+.booking-form {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.form-group > label {
+  font-size: 1.05rem;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.optional {
+  margin-left: 8px;
+  color: #888888;
+  font-size: 0.7rem;
+  letter-spacing: 1px;
+  font-weight: 700;
+}
+
+.form-group input[type="text"],
+.form-group input[type="number"],
+.form-group input[type="tel"],
+.form-group input[type="email"],
+.form-group textarea {
+  width: 100%;
+  padding: 16px 18px;
+  border: 2px solid #d8d0bf;
+  border-radius: 14px;
+  background: white;
+  color: #171717;
+  font-family: inherit;
+  font-size: 1rem;
+  outline: none;
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 130px;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #d4af37;
+}
+
+.radio-options,
+.checkbox-options {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.radio-options label,
+.checkbox-options label {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 16px;
+  background: white;
+  border: 2px solid #e3ddcf;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: border-color 0.2s ease, background 0.2s ease;
+}
+
+.radio-options label:hover,
+.checkbox-options label:hover {
+  border-color: #d4af37;
+}
+
+.radio-options input,
+.checkbox-options input {
+  width: 18px;
+  height: 18px;
+  accent-color: #d4af37;
+}
+
+.booking-submit {
+  width: 100%;
+  border: none;
+  background: #111111;
+  color: white;
+  padding: 18px 30px;
+  border-radius: 999px;
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.booking-submit:hover {
+  transform: translateY(-2px);
+  background: #222222;
+}
+
+.booking-success {
+  padding: 50px 30px;
+  background: white;
+  border-radius: 24px;
+  text-align: center;
+}
+
+.success-icon {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.booking-success h3 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.booking-success p {
+  color: #555555;
+  line-height: 1.7;
+}
+
+/* BOOKING MOBILE */
+
+@media (max-width: 768px) {
+  .booking-section {
+    padding: 90px 5%;
+  }
+
+  .booking-container {
+    width: 100%;
+  }
+
+  .booking-container h2 {
+    font-size: clamp(2.5rem, 11vw, 4rem);
+    text-align: center;
+  }
+
+  .booking-description {
+    font-size: 1rem;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  .form-group > label {
+    font-size: 1rem;
+  }
+
+  .radio-options label,
+  .checkbox-options label {
+    padding: 13px 14px;
+  }
+}
+
+/* THANK YOU PAGE */
+
+.thank-you-page {
+  min-height: 100vh;
+  background: #111111;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 6%;
+  text-align: center;
+}
+
+.thank-you-content {
+  max-width: 650px;
+}
+
+.thank-you-icon {
+  font-size: 4rem;
+  margin-bottom: 25px;
+}
+
+.thank-you-content .section-label {
+  margin-bottom: 20px;
+}
+
+.thank-you-content h1 {
+  font-size: clamp(3rem, 7vw, 6rem);
+  line-height: 1.05;
+  margin-bottom: 30px;
+}
+
+.thank-you-content > p:not(.section-label) {
+  color: #cfcfcf;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 40px;
+}
+
+.thank-you-button {
+  display: inline-block;
+  background: #d4af37;
+  color: #111111;
+  padding: 16px 30px;
+  border-radius: 999px;
+  font-weight: 700;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.thank-you-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* THANK YOU MOBILE */
+
+@media (max-width: 768px) {
+  .thank-you-page {
+    padding: 40px 5%;
+  }
+
+  .thank-you-icon {
+    font-size: 3.5rem;
+  }
+
+  .thank-you-content h1 {
+    font-size: clamp(2.8rem, 13vw, 4.5rem);
+  }
+
+  .thank-you-content > p:not(.section-label) {
+    font-size: 1rem;
+  }
+
+  .thank-you-button {
+    width: 100%;
+    max-width: 320px;
+  }
+}
